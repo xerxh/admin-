@@ -71,6 +71,20 @@ export default {
       type: Object,
       required: true
     },
+
+    id: {
+      type: String,
+      required: false,
+      default: ''
+    },
+
+    propParams: {
+      type: Object,
+      required: false,
+      default: function() {
+        return {}
+      }
+    },
     // 点击表格行触发回调
     rowClick: {
       type: Function,
@@ -115,7 +129,10 @@ export default {
   },
   methods: {
     fetchData() {
-      this.setParams()
+      console.log(this.id)
+      this.setParams(this.id, this.propParams)
+      console.log(this.propParams)
+      console.log('搜索')
       crudList(this.params, this.crudUrl.selectUrl)
         .then(res => {
           this.setData(res)

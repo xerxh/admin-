@@ -25,7 +25,7 @@ export default {
       navList: [
         { icon: 'el-icon-location', title: '学生管理', path: '/student/index' },
         { icon: 'el-icon-location', title: '老师管理', path: '/teacher/index' },
-        { icon: 'el-icon-location', title: '商品管理', path: '/commodity/index' },
+        // { icon: 'el-icon-location', title: '商品管理', path: '/commodity/index' },
         { icon: 'el-icon-location', title: '首页管理', path: '/index/index' },
         { icon: 'el-icon-location', title: '课程管理', path: '/course/index' },
         { icon: 'el-icon-location', title: '订单管理', path: '/order/index' },
