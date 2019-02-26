@@ -1,4 +1,6 @@
-
+// 最近开发一个微信小程序，在小程序启动时和我方的服务端建立wss长连接，并监听推送到小程序里的消息。
+// 有些消息是A页面关心的，有些消息是B页面关心的，将来可能会有C页面只关心少量消息类型。wx.onSocketMessage()方法该如何写呢？
+// 自然而然地想到发布/订阅模式。
 var publishSubscribeEvent = {
  
     /* 
@@ -109,3 +111,6 @@ sgArticleSystem.remove('articleA', 3);    // 删除张三的订阅
 console.log('###### 删除张三articleA对的订阅');
  
 sgArticleSystem.trigger('articleA', '肖申克的救赎', '梦想是关不住的');
+
+
+// 观察者模式
