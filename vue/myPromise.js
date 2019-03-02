@@ -23,9 +23,12 @@
             // 初始化
             // promise['_resolves'] = promise['_rejects'] = undefined;
             promise['_resolves'] = promise['_rejects'] = [];
+			
         });
     }
     
+	
+	
     
     //参数是一个函数，内部提供两个函数作为该函数的参数,分别是resolve 和 reject
     var Promise = function(resolver){

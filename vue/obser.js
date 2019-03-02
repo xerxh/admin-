@@ -13,7 +13,9 @@ var publishSubscribeEvent = {
      * }
      * 
      */
-    clientList: {},
+    clientList: {
+		
+	},
     
     /* 
      * 添加订阅者(订阅函数)，将订阅的类型与回调函数加入缓存列表
