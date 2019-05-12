@@ -8,7 +8,7 @@
         var promise = this, fn, st;
             
         if(promise._status !== 'PENDING') return;
-        
+     
         // 所以的执行都是异步调用，保证then是先执行的
         setTimeout(function(){
             promise._status = status;
