@@ -15,6 +15,7 @@
   </div>
 </template>
 
+
 <script>
 import { Navbar, navList } from '@/components/layout'
 export default {
