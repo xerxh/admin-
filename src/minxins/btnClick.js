@@ -2,7 +2,6 @@
 export const btnClick = {
   data() {
     return {
-
     }
   },
   methods: {
