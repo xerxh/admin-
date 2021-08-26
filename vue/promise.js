@@ -19,6 +19,7 @@ function Promise(callback) {
     }
 
     function reject(error) {
+      
         if(that.status == 'pending') {
             that.status = 'rejected'
             that.data = console.error;
